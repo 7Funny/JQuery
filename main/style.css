@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 40px;
+    margin: 48px 22px 22px;
+    text-align: center;
+}
+
+.all{
+    height: 100%;
+}
+
+/* _____________________________ head */
+.head{
+    display: flex;
+    height: 100%;
+    background-color: #000000;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0;
+}
+.banner{
+    font-size:14px;
+    color: white;
+    margin: 10px 20px 0px;
+}
+
+.right_banner{
+    display: flex;
+    position: absolute;
+    right: 0px;
+}
+
+/* _____________________________ footer */
+.footer{
+    height:40px;
+    background-color: #bcc3e2;
+    width: 100%;
+    bottom: 0%;
+    position: fixed;
+    text-align: center;
+}
+
+/* _____________________________ contacts, new, profile (общее) */
+.aside_main{
+    display:flex;
+    box-sizing: border-box;
+    margin: 4%;
+    height: 100%;
+}
+.aside{
+    background-color:#000000;
+    color: white;
+    text-align: center;
+    width: 25%;
+    height: max-content;
+}
+.photo{
+    border: 1px solid white; 
+    box-sizing: border-box;
+    max-width: 100%;
+}
+@media(max-width:250) {
+    .photo{
+        min-width: none;
+    }
+}
+/* _____________________________ contacts */
+.icons{
+    display: flex;
+    margin-left: 30%;
+    margin-bottom: 10%;
+}
+.icon{
+    position: relative;
+    bottom: 0;
+    transition: bottom 0.5s linear;
+}
+.icon:hover {
+    position: relative;
+    bottom: 10px;
+    transition: bottom 0.5s linear;
+}
+.icons .icon{
+    margin-right: 7.88px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+/* _____________________________ new */
+.full_text{
+    box-sizing: border-box;
+    padding: 1%;
+    width: 100%;
+    max-width: 60%;
+}
+/* _____________________________ profile */
+.main{
+    width: 100%;
+    padding: 3%;
+}
+/* _____________________________ общее: new_add, new_edit, register (кроме form и full) */
+.form{
+    margin-left: 15%;
+    margin-bottom: 3%;
+}
+.place{
+    width: 50%;
+    margin-bottom: 5px 0px 0px;
+    border-radius:5px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border: 2px solid #eee;
+}
+.button{
+    width: 50%;
+    border-radius:3px;
+    border: 2px solid #07789415;
+}
+.full.place{
+    height: 100px;
+}
+/* _____________________________ new_edit */
+.photoEdit{
+    width: 273px;
+    max-width: 100%;
+    border: 1px solid white; 
+    box-sizing: border-box;
+}
+/* _____________________________ register */
+.req-ath{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name_form{
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px;
+    margin-top: 5px;
+}
+/* _____________________________ index */
+/* лента */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+.slick-list{
+    overflow: hidden;
+}
+.slider{
+    position: relative;
+    padding: 0 50px;
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 40%;
+    z-index: 10;/*регулирование по оси z*/
+    font-size: 0;/*убрать текст в стрелках*/
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+}
+/* кнопка слева */
+.slider .slick-arrow.slick-prev{
+    left: 2px;
+    background: url("../images/prev.svg") 0 0 / 100% no-repeat;/*задаем рисунок для кнопок*/
+}
+/* кнопка справа */
+.slider .slick-arrow.slick-next{
+    right: 2px;
+    background: url('../images/next.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.slider .slick-dots li.slick-active button{
+    background-color: #000000;
+    border: 1px solid #DCDCDC;
+}
+.slider .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #DCDCDC;
+    border-radius: 50%;
+}
+.listIndexNews{
+    display: flex;
+    box-shadow: 0.4em 0.4em 5px rgba(0, 0, 0, 0.137);
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;/*убрли непрозрачность*/
+    min-width: 0;
+}
+.listIndexNews.slick-center{
+    opacity: 1;/*вернули непрозрачность центр. эл-ту*/
+}
+.photoNew{
+    text-align: center;
+    padding: 7px;
+    min-width: 0;
+}
+.infoNew{
+    padding: 7px;
+    min-width: 0;
+}
+@media(min-width:580) {
+    .listIndexNews{
+        max-width: none;
+    }
+}
+.img{
+    width: 75%;
+    max-width: 100%;
+}
+/* _____________________________ add, update */
+.sms{
+    margin-left:200px;
+}
+/* _____________________________  */
+
+
+
